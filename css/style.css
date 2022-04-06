@@ -1,0 +1,11 @@
+#grid {
+  width: 700px;
+  height: auto;
+  padding: 20px;
+  border: 3px gold outset;
+  background-color: white;
+}
+
+body {
+  background-image: url("../img/bg.jpg");
+}

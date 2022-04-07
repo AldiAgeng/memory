@@ -114,7 +114,6 @@ const checkCard = () => {
   } else {
     cards[oneId].setAttribute("src", "img/back.png");
     cards[twoId].setAttribute("src", "img/back.png");
-    // nope.play();
   }
 
   // score
@@ -124,14 +123,16 @@ const checkCard = () => {
 
   // menang
   if (cardsWon.length == cardArray.length / 2) {
-    result.textContent = "Yea, You found them all";
+    const text = document.createElement("h1");
+    text.textContent = "Yea, You found them all";
+    text.style.marginTop = "-350px";
+    grid.appendChild(text);
     yeay.play();
   }
 };
 
 // membalik kartu
 function flipCard() {
-  console.log(cardArray);
   let cardId = this.getAttribute("card-id");
   cardsChose.push(cardArray[cardId].name);
   cardsChoseId.push(cardId);

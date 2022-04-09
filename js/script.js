@@ -104,7 +104,7 @@ const checkCard = () => {
   }
 
   // cek 2 kartu yang dipilih sama apa tidak
-  if (cardsChose[0] == cardsChose[1]) {
+  else if (cardsChose[0] == cardsChose[1]) {
     cards[oneId].setAttribute("src", "img/white.png");
     cards[twoId].setAttribute("src", "img/white.png");
     cards[oneId].removeEventListener("click", flipCard);
